@@ -1,0 +1,221 @@
+body{
+    font-family: League Spartan;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.head{
+    width: 540px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.symbol{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    flex-basis: 65%;
+    transform: translateY(7px);
+}
+
+.theme{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(7px);
+}
+
+.toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+label {
+    display: block;
+    width: 80px;
+    height: 30px;
+    background-color:hsl(223, 31%, 20%);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+label::after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    border-radius: 70px;
+    top: 6px;
+    left: 13px;
+    transition: 0.5s;
+}
+
+input:checked + label:after {
+    left: calc(100% - 15px);
+    transform: translateX(-100%);
+}
+
+.result{
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    height: 80px;
+    width: 510px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: right;
+
+}
+
+.input{
+    background-color: hsl(223, 31%, 20%);
+    height: 460px;
+    width: 540px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+}
+
+.r1 button,.r2 button,.r3 button,.r4 button{
+    height: 65px;
+    width: 100px;
+    color: hsl(221, 14%, 31%);
+    background-color: rgb(181, 181, 186);
+    font-size: 35px;
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+.r1 button:hover,.r2 button:hover,.r3 button:hover,.r4 button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.r1 .del{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 29px;
+    transition: 0.1s;
+}
+
+.r1 .del:hover{
+    background-color: rgb(123, 151, 203);
+    cursor: pointer;
+}
+
+.r1,.r2,.r3,.r4,.r5{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    transform: translateY(30px);
+}
+
+.r5 button{
+    height: 65px;
+    width: 230px;
+    transition: 0.1s;
+}
+
+.r1{
+    margin-top: 20px;
+}
+
+.r5 .reset{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.r5 .reset:hover{
+    background-color: rgb(123, 151, 203);
+    cursor: pointer;
+}
+
+.r5 .equal{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.r5 .equal:hover{
+    background-color:hsl(6, 76%, 59%) ;
+    cursor: pointer;
+}
+
+/* .button-white button {
+    background-color: white;
+    color: black;
+}
+
+.button-white .r1 .del, .button-white .r5 .reset {
+    background-color: rgb(123, 151, 203);
+}
+
+.button-white .r5 .equal {
+    background-color: hsl(0, 5%, 81%);
+} */
+
+.button-white .result {
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+}
+
+.button-white .input {
+    background-color: hsl(0, 5%, 81%);
+    color: black;
+}
+
+.button-white{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.button-white button {
+    background-color: hsl(45, 7%, 89%);
+    color: black;
+}
+
+.button-white .symbol,.button-white .theme {
+    color: black;
+}
+
+.button-white .r1 .del, .button-white .r5 .reset {
+    background-color: hsl(185, 42%, 37%);
+}
+
+.button-white .r1 .del:hover, .button-white .r5 .reset:hover {
+    background-color: hsl(221, 14%, 31%);
+}
+
+.button-white label{
+    background-color: hsl(0, 5%, 81%);
+}
+
+.button-white label::after{
+    background-color:  hsl(34, 87%, 48%);
+}
+
+.button-white .r5 .equal:hover {
+    background-color: hsl(25, 84%, 45%);
+}
